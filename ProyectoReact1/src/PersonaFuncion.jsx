@@ -1,4 +1,11 @@
-export default function PersonaFuncion() {
+import PropTypes from "prop-types";
+
+PersonaFuncion.propTypes = {
+  listado: PropTypes.array,
+  titulo: PropTypes.string,
+};
+
+export default function PersonaFuncion({ listado, titulo = "Titulo vacio" }) {
   const nombre = "Gabriel Damian";
   const apellido = "Miguel";
   const obj = {
@@ -6,19 +13,20 @@ export default function PersonaFuncion() {
     apellido: "Miguel",
   };
 
-  const listadoPersonas = [
-    { id: 1, nombre: "Gabriel", apellido: "Miguel", edad: "56" },
-    { id: 2, nombre: "Claudia", apellido: "Flosi", edad: "55" },
-    { id: 3, nombre: "Pepe", apellido: "Potamo", edad: "105"},
-  ];
   return (
     <>
-      {listadoPersonas.map((elemento) => {
-         return (
-        <div key={elemento.id} className="logo">
-          {elemento.nombre + " " + elemento.apellido + " de " + elemento.edad +" años"}
-        </div>
-      );
+      <h3 className="titulo">{titulo}</h3>
+      {listado.map((elemento) => {
+        return (
+          <div key={elemento.id} className="logo">
+            {elemento.nombre +
+              " " +
+              elemento.apellido +
+              " de " +
+              elemento.edad +
+              " años"}
+          </div>
+        );
       })}
 
       <div className="logo2">

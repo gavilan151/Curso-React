@@ -4,7 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
-
+.titulo{
+  color: rgb(231, 6, 6)
+}
 .logo {
   
   padding: 1.5em;
