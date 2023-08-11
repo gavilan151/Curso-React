@@ -1,11 +1,14 @@
 import "./App.css";
+import Barra from "./Barra";
 // import Persona from "./PersonaComponent";
 // import PersonaFuncion from "./PersonaFuncion";
-// import { Boton } from "./Boton";
+//  import { Boton } from "./Boton";
+ import BotonMaterial from "./BotonMaterial";
+// import CustomPaginationActionsTable from "./Tabla";
 // import { Counter } from "./Counter";
 // import Usuarios from "./Usuarios";
-// import UsuariosConReactQuery from "./UsuariosConReactQuery";
-import UsReactQueryHandle from "./UsuariosConReactQuery";
+//import UsuariosConReactQuery from "./UsuariosConReactQuery";
+
 function App() {
   // const listadopersonas = [
   //   { id: 1, nombre: "Gabriel", apellido: "Miguel", edad: "56" },
@@ -21,14 +24,17 @@ function App() {
 
   return (
     <>
+    <Barra/>
+
+    <BotonMaterial/>
+    {/* <CustomPaginationActionsTable/> */}
       {/* <UsuariosConReactQuery /> */}
-      <UsReactQueryHandle/>
 
       {/* <Usuarios/>
     <Counter texto = "Contar"/>
      <Persona/>
-     <PersonaFuncion listado = {listadopersonas} titulo= "LISTADO DE PERSONAL"/>
-     <Boton texto = "Boton de Alta" handler={handleClick}/> */}
+     <PersonaFuncion listado = {listadopersonas} titulo= "LISTADO DE PERSONAL"/> */}
+     {/* <Boton texto = "Boton de Alta" handler={handleClick}/> */}
     </>
   );
 }

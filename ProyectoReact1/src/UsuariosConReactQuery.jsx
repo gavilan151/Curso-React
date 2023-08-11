@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 
+
+
 function conDelay(delay) {           //es un deley para simular lo que tarda en traer los datos de un server y poder mostrar la leyenda: Recuperando datos... (sacarla)
   return new Promise((resolved) => setTimeout(resolved, delay));
 }
@@ -48,6 +50,7 @@ export default function Usuarios2() {
 
   return (
     <>
+    
     
     <button disabled={page === 1} onClick={handleClickAnterior}>
         Anterior

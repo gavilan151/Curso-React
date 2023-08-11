@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import "./Botones.css"
+//import Stack from '@mui/material/Stack';
 
 Boton.propTypes = {
   texto: PropTypes.string,
@@ -15,6 +16,7 @@ export function Boton( {texto,handler} ) {
 
    return (
      <>
+
       <button onMouseOver={handleMouseOver} onClick={handler} className='botones'>
          {texto}
       </button>
