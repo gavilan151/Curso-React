@@ -3,11 +3,18 @@ import Barra from "./Barra";
 // import Persona from "./PersonaComponent";
 // import PersonaFuncion from "./PersonaFuncion";
 //  import { Boton } from "./Boton";
- import BotonMaterial from "./BotonMaterial";
+// import BotonMaterial from "./BotonMaterial";
 // import CustomPaginationActionsTable from "./Tabla";
 // import { Counter } from "./Counter";
 // import Usuarios from "./Usuarios";
-//import UsuariosConReactQuery from "./UsuariosConReactQuery";
+// import UsuariosConReactQuery from "./UsuariosConReactQuery";
+// import { Route,Routes } from "react-router-dom";
+
+// <Routes>
+//    <Route path="/UsuariosConReactQuery" element={<UsuariosConReactQuery />} />
+//    <Route path="/course" element={ <BotonMaterial/>} />
+   
+// </Routes>
 
 function App() {
   // const listadopersonas = [
@@ -26,7 +33,7 @@ function App() {
     <>
     <Barra/>
 
-    <BotonMaterial/>
+    {/* <BotonMaterial/> */}
     {/* <CustomPaginationActionsTable/> */}
       {/* <UsuariosConReactQuery /> */}
 
